@@ -83,6 +83,7 @@ const watch = function(cb) {
     gulp.watch("src/scss/**/*.scss", {usePolling : true}, gulp.series(css));
     gulp.watch("src/js/**/*.js", gulp.series(js));
     gulp.watch("dist/**/*").on("change", browserSync.reload);
+    gulp.watch("*.html").on("change", browserSync.reload);
 
     cb();
 }
