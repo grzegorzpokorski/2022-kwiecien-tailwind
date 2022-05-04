@@ -6,7 +6,7 @@ const rename = require("gulp-rename");
 const webpack = require("webpack");
 const webp = require("gulp-webp");
 const imageResize = require("gulp-image-resize");
-// const browserSync = require("browser-sync").create();
+const browserSync = require("browser-sync").create();
 
 const css = function () {
   return gulp
@@ -100,12 +100,12 @@ const watch = function (cb) {
 };
 
 exports.default = gulp.series(css, js, watch);
-// exports.autoreload = gulp.series(css, js, server, watch);
+exports.autoreload = gulp.series(css, js, server, watch);
 exports.css = css;
 exports.fontawesome = fontawesome;
 exports.mainfont = mainfont;
 exports.fonts = gulp.series(fontawesome, mainfont);
 exports.js = js;
 exports.images = images;
-// exports.server = server;
+exports.server = server;
 exports.watch = watch;
