@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./dist/css/style.min.css" />
+    <title>2022-kwiecien-tailwind</title>
+  </head>
+  <body>
+    <a
+      href="#tresc"
+      class="fixed py-4 px-8 m-4 bg-gray-500 text-white skip-link"
+      >Przejdź do treści</a
+    >
+    <header
+      id="navbar"
+      class="bg-white py-9 lg:py-12 fixed w-full z-10 transition-all duration-300"
+    >
+      <div class="container mx-auto px-3">
+        <div
+          class="flex flex-col lg:flex-row gap-3 items-center lg:justify-between"
+        >
+          <div
+            class="flex flex-row justify-between items-center w-full lg:w-auto"
+          >
+            <a href="#" class="text-lg font-bold">
+              <span class="text-green">Grzegorz</span>
+              <span class="text-gray">Pokorski</span>
+            </a>
+            <button
+              id="menu-opener"
+              class="flex flex-col justify-around lg:hidden mr-2 hamburger"
+              aria-label="otwórz nawigacje"
+            >
+              <span class="sr-only">Otwórz menu</span>
+              <span class="hamburger-top"></span>
+              <span class="hamburger-middle"></span>
+              <span class="hamburger-bottom"></span>
+            </button>
+          </div>
+          <nav id="menu" class="w-full lg:w-auto pt-8 lg:pt-0 lg:inline hidden">
+            <ul class="flex flex-col lg:flex-row gap-6 lg:items-center">
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-500 hover:text-gray-800 transition-all"
+                  >O mnie</a
+                >
+              </li>
+              <li class="relative dropdown-wrapper">
+                <a
+                  href="#"
+                  class="text-gray-500 hover:text-gray-800 transition-all dropdown-toggle"
+                  >Oferta</a
+                >
+                <ul
+                  class="lg:absolute bg-white lg:drop-shadow-md mt-4 flex flex-col lg:w-72 pb-4 dropdown-menu transition-all duration-300"
+                >
+                  <li class="pt-4">
+                    <a
+                      href="#"
+                      class="block text-gray-500 lg:text-gray-800 hover:text-green border-l-2 border-transparent hover:border-green px-4 transition-all duration-300"
+                      >Tworzenie stron internetownych</a
+                    >
+                  </li>
+                  <li class="pt-4">
+                    <a
+                      href="#"
+                      class="block text-gray-500 lg:text-gray-800 hover:text-green border-l-2 border-transparent hover:border-green px-4 transition-all duration-300"
+                      >Kodowanie szablonów graficznych</a
+                    >
+                  </li>
+                  <li class="pt-4">
+                    <a
+                      href="#"
+                      class="block text-gray-500 lg:text-gray-800 hover:text-green border-l-2 border-transparent hover:border-green px-4 transition-all duration-300"
+                      >Projektowanie graficzne</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-500 hover:text-gray-800 transition-all"
+                  >Realizacje</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-500 hover:text-gray-800 transition-all"
+                  >Blog</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="inline-block bg-green hover:bg-greenHover text-white px-6 py-3 transition-all"
+                  >Kontakt</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main id="tresc" class="pt-36">
+      <section class="bg-white pb-12 md:py-12">
+        <div
+          class="container mx-auto px-3 flex flex-col md:flex-row items-center gap-3"
+        >
+          <header
+            class="md:w-1/2 flex flex-col gap-3 text-center md:text-left items-center md:items-start"
+          >
+            <h1
+              class="text-3xl lg:text-4xl xl:text-[2.5rem] xl:leading-[1.2] font-bold text-customGray"
+            >
+              Tworzenie stron w oparciu o CMS WordPress
+            </h1>
+            <p>
+              Niepowtarzalne, indywidualnie przygotowywane, ultra szybkie strony
+              internetowe z najpopularniejszym systemem zażądania treścią.
+            </p>
+            <div
+              class="flex flex-row flex-wrap gap-2 justify-center md:justify-start"
+            >
+              <a
+                href="#"
+                class="bg-green hover:bg-greenHover text-white px-4 md:px-6 py-2 md:py-3 transition-all"
+                >Rozpocznijmy współpracę</a
+              >
+              <a
+                href="#"
+                class="bg-transparent hover:bg-greenHover text-green hover:text-white border-2 border-green px-4 md:px-6 py-2 md:py-3 transition-all"
+                >Dowiedz się więcej</a
+              >
+            </div>
+          </header>
+          <picture class="w-full md:w-1/2">
+            <source
+              media="(min-width: 576px)"
+              srcset="./dist/img/pages-768w.webp"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="./dist/img/pages-992w.webp"
+            />
+            <source
+              media="(min-width: 992px)"
+              srcset="./dist/img/pages-1200w.webp"
+            />
+            <source
+              media="(min-width: 1200px)"
+              srcset="./dist/img/pages-1920w.webp"
+            />
+            <img
+              width="1200"
+              height="900"
+              src="./dist/img/pages-576w.webp"
+              alt="człowiek koduje na kanapie"
+            />
+          </picture>
+        </div>
+      </section>
+      <section class="bg-white py-16 md:py-24">
+        <div class="container px-3 mx-auto">
+          <header
+            class="text-center w-full md:w-4/6 mx-auto flex flex-col gap-4"
+          >
+            <span class="text-green uppercase font-bold">Zalety</span>
+            <h2 class="font-bold text-3xl md:text-4xl text-customGray">
+              Czym wyróżniają się moje strony?
+            </h2>
+          </header>
+          <ul
+            class="flex flex-col lg:grid md:grid-cols-2 xl:grid-cols-3 gap-6 mt-12 md:mt-24"
+          >
+            <li
+              class="w-full bg-white border-2 border-greenLight drop-shadow-xl"
+            >
+              <article class="p-8">
+                <header class="flex flex-row gap-3 items-center">
+                  <span
+                    class="relative bg-green inline-block min-w-[4rem] min-h-[4rem]"
+                  >
+                    <span
+                      class="fa fa-mobile-screen font-bold text-white text-2xl icon-in-box"
+                      aria-hidden="true"
+                    ></span>
+                  </span>
+                  <h3 class="font-bold text-lg">
+                    Zakodowana mobile first, pełna responsywnośc
+                  </h3>
+                </header>
+                <p class="mt-6">
+                  Większość użytkowników internetu używa z urządzeń mobilnych.
+                  Wychodząc temu naprzeciw, wykonywane przeze mnie strony
+                  cechują się doskonałym dostosowaniem do każdego rodzaju
+                  urządzeń — począwszy od smartfonów, przez tablety, na dużych
+                  ekranach monitorów kończąc.
+                </p>
+              </article>
+            </li>
+            <li
+              class="w-full bg-white border-2 border-greenLight drop-shadow-xl"
+            >
+              <article class="p-8">
+                <header class="flex flex-row gap-3 items-center">
+                  <span
+                    class="relative bg-green inline-block min-w-[4rem] min-h-[4rem]"
+                  >
+                    <span
+                      class="fa fa-code font-bold text-white text-2xl icon-in-box"
+                      aria-hidden="true"
+                    ></span>
+                  </span>
+                  <h3 class="font-bold text-lg">Semantyczny kod źródłowy</h3>
+                </header>
+                <p class="mt-6">
+                  Kod strony odpowiada zamieszczanej na niej treści, a
+                  odpowiednio dobrane znaczniki prawidłowo nakreślają jej
+                  strukturę, czyniąc ją dostępną również dla użytkowników
+                  korzystających z urządzeń wspomagających jej przeglądanie
+                  takich jak czytniki ekranowe.
+                </p>
+              </article>
+            </li>
+            <li
+              class="w-full bg-white border-2 border-greenLight drop-shadow-xl"
+            >
+              <article class="p-8">
+                <header class="flex flex-row gap-3 items-center">
+                  <span
+                    class="relative bg-green inline-block min-w-[4rem] min-h-[4rem]"
+                  >
+                    <span
+                      class="fa fa-spell-check font-bold text-white text-2xl icon-in-box"
+                      aria-hidden="true"
+                    ></span>
+                  </span>
+                  <h3 class="font-bold text-lg">Zgodność z zasadami SEO</h3>
+                </header>
+                <p class="mt-6">
+                  Bardzo ważne jest, aby strona dobrze indeksowała się w
+                  wyszukiwarkach internetowych. Rozumiejąc tę potrzebę, dlatego
+                  dbam, aby wykonanie strony oraz stosowane technologie
+                  wspomagały osiągnięcie wysokich pozycji w najpopularniejszych
+                  wyszukiwarkach takich jak Google.
+                </p>
+              </article>
+            </li>
+            <li
+              class="w-full bg-white border-2 border-greenLight drop-shadow-xl"
+            >
+              <article class="p-8">
+                <header class="flex flex-row gap-3 items-center">
+                  <span
+                    class="relative bg-green inline-block min-w-[4rem] min-h-[4rem]"
+                  >
+                    <span
+                      class="fa fa-boxes font-bold text-white text-2xl icon-in-box"
+                      aria-hidden="true"
+                    ></span>
+                  </span>
+                  <h3 class="font-bold text-lg">Możliwość rozbudowy</h3>
+                </header>
+                <p class="mt-6">
+                  Modułowa budowa wykonywanych projektów pozwala na
+                  rozbudowywanie witryny w przyszłości, jeśli zaszłaby potrzeba
+                  dodania dodatkowych funkcjonalności czy elementów struktury.
+                </p>
+              </article>
+            </li>
+            <li
+              class="w-full bg-white border-2 border-greenLight drop-shadow-xl"
+            >
+              <article class="p-8">
+                <header class="flex flex-row gap-3 items-center">
+                  <span
+                    class="relative bg-green inline-block min-w-[4rem] min-h-[4rem]"
+                  >
+                    <span
+                      class="fa fa-check-double font-bold text-white text-2xl icon-in-box"
+                      aria-hidden="true"
+                    ></span>
+                  </span>
+                  <h3 class="font-bold text-lg">
+                    Prostota zarządzania treścią
+                  </h3>
+                </header>
+                <p class="mt-6">
+                  Indywidualne podejście do wykonywanych witryn pozwala
+                  doskonale dopasować panel zażądania treścią strony, aby
+                  praktycznie każdy bez znajomości programowania mógł z
+                  przyjemnością nią zarządzać.
+                </p>
+              </article>
+            </li>
+            <li
+              class="w-full bg-white border-2 border-greenLight drop-shadow-xl"
+            >
+              <article class="p-8">
+                <header class="flex flex-row gap-3 items-center">
+                  <span
+                    class="relative bg-green inline-block min-w-[4rem] min-h-[4rem]"
+                  >
+                    <span
+                      class="fa fa-rocket font-bold text-white text-2xl icon-in-box"
+                      aria-hidden="true"
+                    ></span>
+                  </span>
+                  <h3 class="font-bold text-lg">Szybkie ładowanie</h3>
+                </header>
+                <p class="mt-6">
+                  Stosuję nowoczesne formaty grafik oraz techniki pozwalające
+                  zoptymalizować czas ładowania się strony w przeglądarce. Każda
+                  witryna jest testowana pod tym kątem narzędziami takimi jak
+                  PageSpeed Insights czy GTmetrix.
+                </p>
+              </article>
+            </li>
+            <li
+              class="w-full bg-white border-2 border-greenLight drop-shadow-xl"
+            >
+              <article class="p-8">
+                <header class="flex flex-row gap-3 items-center">
+                  <span
+                    class="relative bg-green inline-block min-w-[4rem] min-h-[4rem]"
+                  >
+                    <span
+                      class="fa fa-brands fa-html5 font-bold text-white text-2xl icon-in-box"
+                      aria-hidden="true"
+                    ></span>
+                  </span>
+                  <h3 class="font-bold text-lg">
+                    Zgondość z najnowszymi standardami
+                  </h3>
+                </header>
+                <p class="mt-6">
+                  Podążając za zmianami, w swoich projektach wykorzystuję
+                  najnowsze technologie takie jak: HTML5, SCSS, JS ES6, MySQL,
+                  WEBP i najlepsze praktyki jak: BEM, Moblie First, aby finalnie
+                  wyróżniać się solidnym wykonaniem oraz wydajnością.
+                </p>
+              </article>
+            </li>
+            <li
+              class="w-full bg-white border-2 border-greenLight drop-shadow-xl"
+            >
+              <article class="p-8">
+                <header class="flex flex-row gap-3 items-center">
+                  <span
+                    class="relative bg-green inline-block min-w-[4rem] min-h-[4rem]"
+                  >
+                    <span
+                      class="fa fa-rocket font-bold text-white text-2xl icon-in-box"
+                      aria-hidden="true"
+                    ></span>
+                  </span>
+                  <h3 class="font-bold text-lg">
+                    Kompatybilność z najnowszymi przeglądarkami
+                  </h3>
+                </header>
+                <p class="mt-6">
+                  Gwarantuję pełną funkcjonalność wykonywanej strony na
+                  najpopularniejszych przeglądarkach internetowych: Mozilla
+                  Firefox (3 ostanie wersje), Google Chrome (3 ostatnie wersje),
+                  Safari (1 ostatnia wersja).
+                </p>
+              </article>
+            </li>
+            <li
+              class="w-full bg-white border-2 border-greenLight drop-shadow-xl"
+            >
+              <article class="p-8">
+                <header class="flex flex-row gap-3 items-center">
+                  <span
+                    class="relative bg-green inline-block min-w-[4rem] min-h-[4rem]"
+                  >
+                    <span
+                      class="fa fa-palette font-bold text-white text-2xl icon-in-box"
+                      aria-hidden="true"
+                    ></span>
+                  </span>
+                  <h3 class="font-bold text-lg">Nowoczesny design</h3>
+                </header>
+                <p class="mt-6">
+                  Wykonuję strony internetowe, które cieszą oko swoim wyglądem
+                  oraz działaniem. Śledzę aktualne oraz dopiero pojawiające się
+                  światowe trendy w zakresie projektowania stron i staram się
+                  przekładać zdobywaną wiedzę na swoje prace.
+                </p>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="py-16 md:py-24 bg-whiteGreen">
+        <div
+          class="container px-3 mx-auto flex flex-col md:flex-row gap-3 items-center"
+        >
+          <div class="w-full md:w-1/2">
+            <header class="text-left flex flex-col gap-4">
+              <span class="text-green uppercase font-bold">TECHNOLOGIE</span>
+              <h2 class="font-bold text-3xl md:text-4xl text-customGray">
+                Technologie, z których korzystam
+              </h2>
+            </header>
+            <div class="prose mt-6">
+              <p>
+                Do wykonania szczegółowych projektów graficznych witryn
+                internetowych wykorzystuję Figmę oraz Adobe Phtoshop. Po
+                zakończeniu tworzenia makiet witryny, wykorzystuje najnowszą,
+                niezawodną dostępną technologię do przekształcenia jej w
+                funkcjonalną, wolną od błędów i responsywną stronę internetową.
+              </p>
+              <p>
+                Do zaprogramowania oraz wdrożenia projektu wykorzystuję
+                technologie takie jak: HTML5, CSS3, PHP7, Java Script ES6+, oraz
+                praktyki: Mobile First, BEM. Wszystko to aby dostarczyć jak
+                najlepszy jakościowo produkt.
+              </p>
+            </div>
+            <footer class="mt-6">
+              <a
+                href="#"
+                class="inline-block bg-green hover:bg-greenHover text-white px-4 md:px-6 py-2 md:py-3 transition-all"
+                >Rozpocznijmy współpracę</a
+              >
+            </footer>
+          </div>
+          <picture class="w-full w-full md:w-1/2">
+            <source
+              media="(min-width: 576px)"
+              srcset="./dist/img/logos-768w.webp"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="./dist/img/logos-992w.webp"
+            />
+            <source
+              media="(min-width: 992px)"
+              srcset="./dist/img/logos-1200w.webp"
+            />
+            <source
+              media="(min-width: 1200px)"
+              srcset="./dist/img/logos-1920w.webp"
+            />
+            <img
+              width="1500"
+              height="20000"
+              src="./dist/img/logos-576w.webp"
+              alt="chłopak pracuje na sofie"
+              loading="lazy"
+            />
+          </picture>
+        </div>
+      </section>
+
+      <section class="bg-white py-16 md:py-24">
+        <div class="container px-3 mx-auto">
+          <header
+            class="text-center w-full md:w-4/6 mx-auto flex flex-col gap-4"
+          >
+            <span class="text-green uppercase font-bold">WSPÓŁPRACA</span>
+            <h2 class="font-bold text-3xl md:text-4xl text-customGray">
+              Jak przebiega współpraca?
+            </h2>
+            <p>
+              Aenean sed accumsan dolor. Nunc blandit tristique suscipit. Sed at
+              augue sit amet magna tempor ornare ac sed diam. Suspendisse purus
+              sem, bibendum quis aliquam at
+            </p>
+          </header>
+          <ul class="flex flex-col gap-6 md:gap-0 mt-16 lg:mt-24 process">
+            <li
+              class="flex flex-row justify-end md:even:justify-start process__item"
+            >
+              <article
+                class="w-10/12 md:w-5/12 flex flex-col gap-3 bg-white drop-shadow-md p-8"
+              >
+                <header class="flex flex-row gap-3 process__header">
+                  <span
+                    class="font-bold text-green text-lg process__counter"
+                  ></span>
+                  <h3 class="font-bold text-lg">Brief</h3>
+                </header>
+                <p>
+                  Każdą współpracę zaczynam od szczególowego zbadania porzeb.
+                  Uważam że w dużej mierze pomyśla realizacja projektu musi
+                  zostać poprzedona wnikliną analiza wielu aspektów takich jak:
+                  cel witryny, stylistyka, grupa odbiorców, zakładane rezultaty
+                  czy cele biznesowe.
+                </p>
+              </article>
+            </li>
+            <li
+              class="flex flex-row justify-end md:even:justify-start process__item"
+            >
+              <article
+                class="w-10/12 md:w-5/12 flex flex-col gap-3 bg-white drop-shadow-md p-8"
+              >
+                <header class="flex flex-row gap-3 process__header">
+                  <span
+                    class="font-bold text-green text-lg process__counter"
+                  ></span>
+                  <h3 class="font-bold text-lg">Brief</h3>
+                </header>
+                <p>
+                  Każdą współpracę zaczynam od szczególowego zbadania porzeb.
+                  Uważam że w dużej mierze pomyśla realizacja projektu musi
+                  zostać poprzedona wnikliną analiza wielu aspektów takich jak:
+                  cel witryny, stylistyka, grupa odbiorców, zakładane rezultaty
+                  czy cele biznesowe.
+                </p>
+              </article>
+            </li>
+            <li
+              class="flex flex-row justify-end md:even:justify-start process__item"
+            >
+              <article
+                class="w-10/12 md:w-5/12 flex flex-col gap-3 bg-white drop-shadow-md p-8"
+              >
+                <header class="flex flex-row gap-3 process__header">
+                  <span
+                    class="font-bold text-green text-lg process__counter"
+                  ></span>
+                  <h3 class="font-bold text-lg">Brief</h3>
+                </header>
+                <p>
+                  Każdą współpracę zaczynam od szczególowego zbadania porzeb.
+                  Uważam że w dużej mierze pomyśla realizacja projektu musi
+                  zostać poprzedona wnikliną analiza wielu aspektów takich jak:
+                  cel witryny, stylistyka, grupa odbiorców, zakładane rezultaty
+                  czy cele biznesowe.
+                </p>
+              </article>
+            </li>
+            <li
+              class="flex flex-row justify-end md:even:justify-start process__item"
+            >
+              <article
+                class="w-10/12 md:w-5/12 flex flex-col gap-3 bg-white drop-shadow-md p-8"
+              >
+                <header class="flex flex-row gap-3 process__header">
+                  <span
+                    class="font-bold text-green text-lg process__counter"
+                  ></span>
+                  <h3 class="font-bold text-lg">Brief</h3>
+                </header>
+                <p>
+                  Każdą współpracę zaczynam od szczególowego zbadania porzeb.
+                  Uważam że w dużej mierze pomyśla realizacja projektu musi
+                  zostać poprzedona wnikliną analiza wielu aspektów takich jak:
+                  cel witryny, stylistyka, grupa odbiorców, zakładane rezultaty
+                  czy cele biznesowe.
+                </p>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="py-24 bg-green">
+        <div class="container px-3 mx-auto">
+          <header
+            class="w-full md:w-2/3 text-center mx-auto text-white flex flex-col gap-5"
+          >
+            <h2 class="text-3xl font-bold">
+              Zbuduj swoją wysokiej klasy stronę internetową ze mną!
+            </h2>
+            <p>Chętnie pomogę zrealizować Twój projekt.</p>
+            <div class="flex flex-row flex-wrap gap-2 justify-center">
+              <a
+                href="#"
+                class="bg-white text-customGray px-4 md:px-6 py-2 md:py-3 transition-all"
+                >Zobacz ofertę</a
+              >
+              <a
+                href="#"
+                class="bg-transparent hover:bg-white text-white hover:text-customGray border-2 border-white px-4 md:px-6 py-2 md:py-3 transition-all"
+                >Skontaktuj się ze mną</a
+              >
+            </div>
+          </header>
+        </div>
+      </section>
+      <footer class="py-20 bg-white">
+        <div
+          class="container mx-auto px-3 flex flex-wrap flex-col md:flex-row justify-between items-center gap-6"
+        >
+          <a
+            href="#"
+            class="grow basis-0 text-lg font-bold text-center md:order-2 hover:underline"
+          >
+            <span class="text-green">Grzegorz</span>
+            <span class="text-gray">Pokorski</span>
+          </a>
+          <nav class="md:order-1 grow basis-0">
+            <ul class="flex flex-col md:flex-row items-center gap-3">
+              <li>
+                <a href="#" class="hover:underline">O mnie</a>
+              </li>
+              <li>
+                <a href="#" class="hover:underline">Oferta</a>
+              </li>
+              <li>
+                <a href="#" class="hover:underline">Blog</a>
+              </li>
+              <li>
+                <a href="#" class="hover:underline">Kontakt</a>
+              </li>
+            </ul>
+          </nav>
+          <p class="basis-full text-center text-gray-500 md:order-4">
+            Grzegorz Pokorski © 2022. Doodles by doodleipsum.com. Created by
+            Grzegorz Pokorski.
+          </p>
+          <ul
+            class="flex flex-row grow basis-0 gap-3 text-green md:justify-end md:order-3"
+          >
+            <li>
+              <a
+                href="https://behance.net/grzegorzpokorski"
+                target="_blank"
+                rel="nofolow noreferer"
+                class="hover:text-greenHover"
+              >
+                <span class="sr-only"> behance </span>
+                <span class="fa fab fa-behance" aria-hidden="true"></span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://instagram.com/grzegorz_pokorski"
+                target="_blank"
+                rel="nofolow noreferer"
+                class="hover:text-greenHover"
+              >
+                <span class="sr-only"> instagram </span>
+                <span class="fa fab fa-instagram" aria-hidden="true"></span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/grzegorz-pokorski/"
+                target="_blank"
+                rel="nofolow noreferer"
+                class="hover:text-greenHover"
+              >
+                <span class="sr-only"> linkedin </span>
+                <span class="fa fab fa-linkedin-in" aria-hidden="true"></span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </main>
+    <script type="text/javascript" src="./dist/js/bundle.js"></script>
+  </body>
+</html>
