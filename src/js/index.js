@@ -18,4 +18,8 @@ menuOpener.addEventListener("click", (e) => {
   menu.classList.toggle("hidden");
   navbar.classList.toggle("drop-shadow-md");
   menuOpener.classList.toggle("open");
+
+  if (window.pageYOffset > 0) {
+    navbar.classList.add("drop-shadow-md");
+  }
 });
