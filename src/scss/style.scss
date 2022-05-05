@@ -4,3 +4,8 @@
 
 @import "./modules/navbar";
 @import "./modules/process";
+
+.prose li::marker {
+  color: #00c865;
+  font-weight: 700;
+}
