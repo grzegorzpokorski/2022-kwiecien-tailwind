@@ -7,10 +7,12 @@ window.addEventListener("scroll", (e) => {
     navbar.classList.add("drop-shadow-md");
     navbar.classList.add("py-5");
     navbar.classList.add("lg:py-8");
+    navbar.classList.add("bg-white");
   } else {
     navbar.classList.remove("drop-shadow-md");
     navbar.classList.remove("py-5");
     navbar.classList.remove("lg:py-8");
+    navbar.classList.remove("bg-white");
   }
 });
 
@@ -18,6 +20,7 @@ menuOpener.addEventListener("click", (e) => {
   menu.classList.toggle("hidden");
   navbar.classList.toggle("drop-shadow-md");
   menuOpener.classList.toggle("open");
+  navbar.classList.add("bg-white");
 
   if (window.pageYOffset > 0) {
     navbar.classList.add("drop-shadow-md");

@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./dist/css/style.min.css" />
+    <title>2022-kwiecien-tailwind</title>
+  </head>
+  <body>
+    <a
+      href="#tresc"
+      class="fixed py-4 px-8 m-4 bg-gray-500 text-white skip-link"
+      >Przejdź do treści</a
+    >
+    <header
+      id="navbar"
+      class="bg-white py-9 lg:py-12 fixed w-full z-10 transition-all duration-300"
+    >
+      <div class="container mx-auto px-3">
+        <div
+          class="flex flex-col lg:flex-row gap-3 items-center lg:justify-between"
+        >
+          <div
+            class="flex flex-row justify-between items-center w-full lg:w-auto"
+          >
+            <a href="#">
+              <h1 class="text-lg font-bold">
+                <span class="text-green">Grzegorz</span>
+                <span class="text-gray">Pokorski</span>
+              </h1>
+            </a>
+            <button
+              id="menu-opener"
+              class="flex flex-col justify-around lg:hidden mr-2 hamburger"
+              aria-label="otwórz nawigacje"
+            >
+              <span class="sr-only">Otwórz menu</span>
+              <span class="hamburger-top"></span>
+              <span class="hamburger-middle"></span>
+              <span class="hamburger-bottom"></span>
+            </button>
+          </div>
+          <nav id="menu" class="w-full lg:w-auto pt-8 lg:pt-0 lg:inline hidden">
+            <ul class="flex flex-col lg:flex-row gap-6 lg:items-center">
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-500 hover:text-gray-800 transition-all"
+                  >O mnie</a
+                >
+              </li>
+              <li class="relative dropdown-wrapper">
+                <a
+                  href="#"
+                  class="text-gray-500 hover:text-gray-800 transition-all dropdown-toggle"
+                  >Oferta</a
+                >
+                <ul
+                  class="lg:absolute bg-white lg:drop-shadow-md mt-4 flex flex-col lg:w-72 pb-4 dropdown-menu transition-all duration-300"
+                >
+                  <li class="pt-4">
+                    <a
+                      href="#"
+                      class="block text-gray-500 lg:text-gray-800 hover:text-green border-l-2 border-transparent hover:border-green px-4 transition-all duration-300"
+                      >Tworzenie stron internetownych</a
+                    >
+                  </li>
+                  <li class="pt-4">
+                    <a
+                      href="#"
+                      class="block text-gray-500 lg:text-gray-800 hover:text-green border-l-2 border-transparent hover:border-green px-4 transition-all duration-300"
+                      >Kodowanie szablonów graficznych</a
+                    >
+                  </li>
+                  <li class="pt-4">
+                    <a
+                      href="#"
+                      class="block text-gray-500 lg:text-gray-800 hover:text-green border-l-2 border-transparent hover:border-green px-4 transition-all duration-300"
+                      >Projektowanie graficzne</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-500 hover:text-gray-800 transition-all"
+                  >Realizacje</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-500 hover:text-gray-800 transition-all"
+                  >Blog</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="inline-block bg-green hover:bg-greenHover text-white px-6 py-3 transition-all"
+                  >Kontakt</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main id="tresc" class="pt-36">
+      <header class="pb-16 md:py-24">
+        <div class="container px-3 mx-auto w-full md:w-8/12">
+          <span class="flex flex-row items-center mb-4 gap-3">
+            <a
+              href="http://localhost/www/2022-kwiecien/kategoria/programowanie/"
+              class="text-green hover:underline"
+            >
+              Programowanie
+            </a>
+            <span
+              class="inline-block w-12 h-0.5 bg-customGray text-separator"
+              aria-hidden="true"
+            ></span>
+            <time datetime="2022.05.02">2022.05.02</time>
+          </span>
+          <h1 class="font-bold text-3xl md:text-4xl">
+            Semantyczny kod HTML, co to właściwie oznacza i dlaczego jest ważny?
+          </h1>
+          <figure
+            class="w-full h-96 max-h-96 overflow-hidden relative block mt-12"
+          >
+            <source
+              media="(min-width: 576px)"
+              srcset="./dist/img/desk-768w.webp"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="./dist/img/desk-992w.webp"
+            />
+            <source
+              media="(min-width: 992px)"
+              srcset="./dist/img/desk-1200w.webp"
+            />
+            <source
+              media="(min-width: 1200px)"
+              srcset="./dist/img/desk-1920w.webp"
+            />
+            <img
+              width="558"
+              height="500"
+              src="./dist/img/desk-576w.webp"
+              alt="człowiek pracuje przy biurku"
+              loading="lazy"
+              class="object-cover object-center w-full h-full"
+            />
+          </figure>
+        </div>
+      </header>
+      <article class="pb-16 md:pb-24">
+        <div class="container px-3 mx-auto w-full md:w-6/12 prose max-w-none">
+          <p>
+            Co oznacza semantyczny kod HTML? Dlaczego tak wiele się o nim mówi i
+            dlaczego jest bardzo ważny? Przeczytaj ten krótki artykuł aby odkryć
+            odpowiedzi na te i inne pytania.
+          </p>
+
+          <h2>Zacznijmy od początku…</h2>
+
+          <p>
+            Semantyka w odniesieniu do programowania w języku HTML odnosi się do
+            tego aby znaczniki HTML pasowały do treści, która się znajdzie
+            między nimi. Na przykład treść stopki strony umieścimy w dedykowanym
+            do tego celu znaczniku &lt;footer&gt;, treść artykułu obejmiemy
+            znacznikiem &lt;article&gt;. Listę wpisów na blogu umieścimy
+            pomiędzy znacznikiem &lt;ul&gt; oznaczającym nie numerowaną listę.
+          </p>
+
+          <h2>Dlaczego tyle się o tym mówi?</h2>
+
+          <p>
+            Czy Tobie przedni akapit również nasunął myśl, że semantyczne
+            stosowanie znaczników HTML jest proste? To prawda, w sytuacji gdzie
+            struktura dokumentu jest naprawdę prosta, ponieważ składa się z
+            podstawowych elementów nie potrzeba wiele, aby semantycznie
+            zastosować znaczniki HTML. Sytuacja zmienia się jednak w przypadku
+            kiedy nasza strona nie jest zwykłym dokumentem tekstowym, jak zwykło
+            to wyglądać na początku istnienia sieci Internet, lecz ma bogatą
+            szatę graficzną. Liczne animacje, czy konieczność dostosowanie
+            strony do różnych urządzeń sprawia, że nasza strona musi być
+            elastyczna, jeśli chodzi o jej układ i rozmieszczenie elementów.
+          </p>
+
+          <p>
+            Wielu programistów zbytnio zaangażowanych stroną wizualną strony
+            internetowej zapomina o tym, że jest to nadal dokument, który
+            powinien mieć odpowiednią strukturę.
+          </p>
+
+          <h3>Dostępność dla każdego.</h3>
+
+          <p>
+            Coraz większą wagę przykłada się do tego aby strony internetowe były
+            dostępne dla każdego. Nie możemy zatem wkluczać osób, które np.
+            niedowidzą i wspomagają się czytnikami ekranowymi. Prawidłowa
+            struktura strony jest konieczna aby czytniki ekranowe prawidłowo
+            przedstawiały treść naszej strony.
+          </p>
+
+          <h3>SEO — czyli wysoka pozycja w wyszukiwarkach.</h3>
+
+          <p>
+            Prawidłowy rozkład znaczników HTML ułatwia prace robotom
+            indeksującym strony internetowe. Szczegółnie ważne jest w tym
+            kontekście prawidłowe użycie podstawowych znaczników, takich jak h1
+            do h6, pogrubień (&lt;strong&gt;), cytatów (&lt;blockquote&gt;), czy
+            dbanie o treść atrybutów znacznika obrazka (&lt;img&gt;), gdzie
+            opisujemy co na nim się znajduje. Wszystkie te działania maja
+            ogromne znaczenie na ocenę treści naszej stron internetowej i jej
+            późniejszą pozycję w wyszukiwarce.
+          </p>
+
+          <h2>HTML5 wychodzi nam na przeciw.</h2>
+
+          <p>
+            Znaczniki HTML pomagają w prawidłowym odzwierciedleniu treści strony
+            w jej strukturze. Stało się to znacznie łatwiejsze do szerokim
+            wprowadzeniu standardu HTML5, w którym znalazły się dedykowane
+            znaczniki takie jak: footer, header, asid, article, section. Dzięki
+            stosowaniu ich czytniki ekranowe, wykorzystywane przez osoby z
+            niepełnosprawnością mogą równie wygodnie poruszać się po naszych
+            stronach i odnosić korzyść z ich treści.
+          </p>
+
+          <p>
+            Poruszając ten temat nie sposób nie wspomnieć, iż jednymi z
+            najważniejszych znaczników to znaczniki nagłówków tj. od h1 do h6.
+            To one bardzo często są wykorzystywane przez czytniki ekranowe do
+            wyznaczania struktury strony i służą jako swoista nawigacja po
+            stronie. Dlatego bardzo ważne jest ich prawidłowe stosowanie.
+          </p>
+
+          <h2>Przetestuj swoją stronę.</h2>
+
+          <p>
+            Prostym sposobem aby dowiedzieć się czy nasza strona internetowa ma
+            prawidłowo dobrane znaczniku html to sytuacja, gdy mamy odpięte
+            arkusze styli css. W takiej sytuacji widać jak na dłoni czy nasza
+            strona pomimo wyłączenia warstwy czysto wizualnej nadal jest
+            czytelna, czy lista jest listą a guzik — guzikiem. Polecam taki
+            eksperyment, ponieważ w taki właśnie sposób widzą naszą stronę
+            wszystkie roboty indeksujące nasze strony oraz urządzenia
+            wspomagające takie, jak czytniki ekranowe.
+          </p>
+
+          <h3>Przydatne narzędzia.</h3>
+
+          <p>
+            Dla nieco bardziej zaawansowanych użytkowników pomocne mogą okazać
+            się narzędzia do testowania oraz inspekcji witryn wbudowane w
+            przeglądarkę. Na przykład w Google Chrome w narzędziach
+            deweloperskich można podejrzeć drzewo dostępności aktualnie
+            przeglądanej witryny.
+          </p>
+
+          <p>
+            Wartościowe mogą okazać się również wskazówki narzędzia do mierzenia
+            jakości stron internetowych. Przykładowym i najbardziej
+            rozpowszechnionym narzędziem jest „lighthouse” od google. Narzędzie
+            to wbudowane jest w przeglądarkę google chrome i znajduje się
+            podobnie jaki podgląd drzewa dostępności w narzędziach
+            deweloperskich. Można je znaleźć na stronie
+            <a href="https://pagespeed.web.dev/" rel="nofollow"
+              >https://pagespeed.web.dev/</a
+            >
+            jednakże wyniki narzędzia na stronie internetowej są znacznie
+            okrojone w porównaniu co dostajemy po analizie narzędziem wbudowanym
+            w przeglądarkę lub dodane do niej w formie
+            <a
+              href="https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk"
+              rel="nofollow"
+              >dodatku</a
+            >.
+          </p>
+
+          <p>
+            Poniżej prezentuję przykładowe wyniki testu z wykorzystaniem
+            narzędzia „google lighthouse” wbudowanego w przeglądarkę.
+          </p>
+
+          <picture class="w-full md:w-1/2">
+            <source
+              media="(min-width: 576px)"
+              srcset="./dist/img/people-768w.webp"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="./dist/img/people-992w.webp"
+            />
+            <source
+              media="(min-width: 992px)"
+              srcset="./dist/img/people-1200w.webp"
+            />
+            <source
+              media="(min-width: 1200px)"
+              srcset="./dist/img/people-1920w.webp"
+            />
+            <img
+              width="1200"
+              height="900"
+              src="./dist/img/people-576w.webp"
+              alt="zadowoleni klienci"
+            />
+          </picture>
+
+          <p>
+            Z punktu widzenia poruszanego przez mnie tematu najbardziej powinno
+            nas interesować sekcja związana z 'Accesibility’ czyli dostępnością
+            oraz „SEO”. To tam można znaleźć najbardziej wartościowe wskazówki
+            odnośnie tego czy poprawnie zastosowano znaczniki html oraz czy
+            czasem jakiegoś nie brakuje – np. nagłówka tytułowego w sekcji.
+            Powyższa grafika wskazuje również na bardzo ważną sprawę, a
+            mianowicie zarówno kwestia dostępności jaki i seo, bezpośrednio
+            wpływa na wynik testu wskazującego czy stosujemy się do dobrych
+            praktyk, a całość w dużej mierze wpływa na wydajność całej witryny.
+          </p>
+
+          <h2>Podsumowanie</h2>
+
+          <p>
+            Dzięki semantycznemu kodowi HTML możemy dotrzeć naprawdę do każdego
+            użytkownika Internetu. Właściwa struktura strony sprawia, iż
+            korzystanie z niej nawet przy pomocy urządzeń wspomagających takich,
+            jak czytniki ekranowe jest przyjemnością i nie powoduje frustracji.
+          </p>
+
+          <p>
+            Warto pochylić się nad tym tematem, aby nasza strona osiągała
+            wyskokiem wyniki w wyszukiwarkach.
+          </p>
+
+          <p>
+            Zachęcam do korzystania z narzędzi pozwalających zyskać wskazówki co
+            można by poprawić, jednakże pamiętajmy, że to programiści na etapie
+            tworzenia strony internetowej nie powinni iść na łatwiznę lecz
+            powinni rozumieć jaka treść docelowo ma się znaleźć w danym miejscu
+            na stronie.
+          </p>
+
+          <p>
+            Nawet jeśli nie zajmujemy się stricte programowaniem stron
+            internetowy, a redagujemy np. artykuły na bloga, warto poznać
+            chociaż podstawy znaczników HTML, aby również zrozumieć, jaki
+            dobierać poziomy nagłówków czy jak prawidłowo osadzać grafiki.
+            Osobiście polecam „Semantyczny blog w HTML” – artykuł / tutorial
+            znajdujący się pod tym adresem:
+            <a
+              href="https://tutorials.comandeer.pl/html5-blog.html"
+              rel="nofollow"
+              >https://tutorials.comandeer.pl/html5-blog.html</a
+            >, który jest na bieżąco aktualizowany, a napisany został przez
+            specjalistę od dostępności witryn internetowych oraz stania na
+            straży prawidłowego stosowania standardów przy tworzeniu witryn
+            internetowych.
+          </p>
+
+          <p>
+            Dla bardziej zaznajomionych z tematem polecam blog
+            <a href="https://www.webkrytyk.pl/" rel="nofollow"
+              >www.webkrytyk.pl</a
+            >
+            prowadzonego przez doświadczonego webdevelopera, na łamach którego
+            można poczytać analizy witryn internetowych wykonanych pod kątem
+            zgodności z semantyką czy dostępnością.
+          </p>
+
+          <p>
+            Ps. Zachęcam do
+            <a href="http://localhost/www/2022-kwiecien/kontakt/"
+              >kontaktu ze mną</a
+            >
+            jeśli chciałbyś aby wykonał audyt twojej strony. Oferuję również
+            <a
+              href="http://localhost/www/2022-kwiecien/oferta/tworzenie-stron-internetowych/"
+              >kodowanie stron internetowych</a
+            >
+            zgonie z prawidłową semantyką.
+          </p>
+        </div>
+        <footer class="container mx-auto px-3 w-full md:w-6/12">
+          <ul class="flex flex-row flex-wrap gap-2 mt-8">
+            <li>
+              <a
+                href="http://localhost/www/2022-kwiecien/tag/dostepnosc/"
+                class="py-2 px-4 bg-whiteGreen text-sm border-2 border-green"
+              >
+                dostępność
+              </a>
+            </li>
+            <li>
+              <a
+                href="http://localhost/www/2022-kwiecien/tag/html/"
+                class="py-2 px-4 bg-whiteGreen text-sm border-2 border-green"
+              >
+                html
+              </a>
+            </li>
+            <li>
+              <a
+                href="http://localhost/www/2022-kwiecien/tag/programowanie/"
+                class="py-2 px-4 bg-whiteGreen text-sm border-2 border-green"
+              >
+                programowanie
+              </a>
+            </li>
+            <li>
+              <a
+                href="http://localhost/www/2022-kwiecien/tag/seo/"
+                class="py-2 px-4 bg-whiteGreen text-sm border-2 border-green"
+              >
+                seo
+              </a>
+            </li>
+          </ul>
+        </footer>
+      </article>
+
+      <section class="py-16 md:py-24 bg-whiteGreen">
+        <div class="container px-3 mx-auto">
+          <header class="flex flex-col gap-3 md:w-4/6">
+            <span class="uppercase font-bold text-green">Polecene</span>
+            <h2 class="font-bold text-3xl md:text-4xl text-customGray">
+              Zaciekawił Cię mój blog? Zobacz również te artykuły:
+            </h2>
+          </header>
+          <ul
+            class="flex flex-col lg:grid md:grid-cols-2 xl:grid-cols-3 gap-6 mt-12 md:mt-24"
+          >
+            <li class="bg-white drop-shadow-xl border-2 border-greenLight">
+              <article>
+                <a href="#">
+                  <picture
+                    class="w-full h-72 max-h-72 overflow-hidden relative block"
+                  >
+                    <source
+                      media="(min-width: 576px)"
+                      srcset="./dist/img/people-768w.webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="./dist/img/people-992w.webp"
+                    />
+                    <source
+                      media="(min-width: 992px)"
+                      srcset="./dist/img/people-1200w.webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="./dist/img/people-1920w.webp"
+                    />
+                    <img
+                      width="558"
+                      height="500"
+                      src="./dist/img/people-576w.webp"
+                      alt="człowiek pracuje przy biurku"
+                      loading="lazy"
+                      class="object-cover object-center w-full h-full hover:scale-105 transition-all duration-300"
+                    />
+                  </picture>
+                </a>
+                <header class="p-8 flex flex-col gap-3">
+                  <div class="flex flex-row gap-3">
+                    <a href="#" class="text-green hover:underline">
+                      Programowanie
+                    </a>
+                  </div>
+                  <a href="#" class="hover:underline">
+                    <h3 class="font-bold text-lg">
+                      Semantyczny kod HTML, co to właściwie oznacza i dlaczego
+                      jest ważny?
+                    </h3>
+                  </a>
+                  <p>
+                    Co oznacza semantyczny kod HTML? Dlaczego tak wiele się o
+                    nim mówi i dlaczego jest bardzo ważny? Przeczytaj ten krótki
+                    artykuł aby odkryć odpowiedzi na te i inne pytania.
+                  </p>
+                </header>
+              </article>
+            </li>
+            <li class="bg-white drop-shadow-xl border-2 border-greenLight">
+              <article>
+                <a href="#">
+                  <picture
+                    class="w-full h-72 max-h-72 overflow-hidden relative block"
+                  >
+                    <source
+                      media="(min-width: 576px)"
+                      srcset="./dist/img/colors-768w.webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="./dist/img/colors-992w.webp"
+                    />
+                    <source
+                      media="(min-width: 992px)"
+                      srcset="./dist/img/colors-1200w.webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="./dist/img/colors-1920w.webp"
+                    />
+                    <img
+                      width="558"
+                      height="500"
+                      src="./dist/img/colors-576w.webp"
+                      alt="człowiek pracuje przy biurku"
+                      loading="lazy"
+                      class="object-cover object-center w-full h-full hover:scale-105 transition-all duration-300"
+                    />
+                  </picture>
+                </a>
+                <header class="p-8 flex flex-col gap-3">
+                  <div class="flex flex-row gap-3">
+                    <a href="#" class="text-green hover:underline">
+                      Programowanie
+                    </a>
+                  </div>
+                  <a href="#" class="hover:underline">
+                    <h3 class="font-bold text-lg">
+                      Semantyczny kod HTML, co to właściwie oznacza i dlaczego
+                      jest ważny?
+                    </h3>
+                  </a>
+                  <p>
+                    Co oznacza semantyczny kod HTML? Dlaczego tak wiele się o
+                    nim mówi i dlaczego jest bardzo ważny? Przeczytaj ten krótki
+                    artykuł aby odkryć odpowiedzi na te i inne pytania.
+                  </p>
+                </header>
+              </article>
+            </li>
+            <li class="bg-white drop-shadow-xl border-2 border-greenLight">
+              <article>
+                <a href="#">
+                  <picture
+                    class="w-full h-72 max-h-72 overflow-hidden relative block"
+                  >
+                    <source
+                      media="(min-width: 576px)"
+                      srcset="./dist/img/desk-768w.webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="./dist/img/desk-992w.webp"
+                    />
+                    <source
+                      media="(min-width: 992px)"
+                      srcset="./dist/img/desk-1200w.webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="./dist/img/desk-1920w.webp"
+                    />
+                    <img
+                      width="558"
+                      height="500"
+                      src="./dist/img/desk-576w.webp"
+                      alt="człowiek pracuje przy biurku"
+                      loading="lazy"
+                      class="object-cover object-center w-full h-full hover:scale-105 transition-all duration-300"
+                    />
+                  </picture>
+                </a>
+                <header class="p-8 flex flex-col gap-3">
+                  <div class="flex flex-row gap-3">
+                    <a href="#" class="text-green hover:underline">
+                      Programowanie
+                    </a>
+                  </div>
+                  <a href="#" class="hover:underline">
+                    <h3 class="font-bold text-lg">
+                      Semantyczny kod HTML, co to właściwie oznacza i dlaczego
+                      jest ważny?
+                    </h3>
+                  </a>
+                  <p>
+                    Co oznacza semantyczny kod HTML? Dlaczego tak wiele się o
+                    nim mówi i dlaczego jest bardzo ważny? Przeczytaj ten krótki
+                    artykuł aby odkryć odpowiedzi na te i inne pytania.
+                  </p>
+                </header>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="py-24 bg-green">
+        <div class="container px-3 mx-auto">
+          <header
+            class="w-full md:w-2/3 text-center mx-auto text-white flex flex-col gap-5"
+          >
+            <h2 class="text-3xl font-bold">
+              Zbuduj swoją wysokiej klasy stronę internetową ze mną!
+            </h2>
+            <p>Chętnie pomogę zrealizować Twój projekt.</p>
+            <div class="flex flex-row flex-wrap gap-2 justify-center">
+              <a
+                href="#"
+                class="bg-white text-customGray px-4 md:px-6 py-2 md:py-3 transition-all"
+                >Zobacz ofertę</a
+              >
+              <a
+                href="#"
+                class="bg-transparent hover:bg-white text-white hover:text-customGray border-2 border-white px-4 md:px-6 py-2 md:py-3 transition-all"
+                >Skontaktuj się ze mną</a
+              >
+            </div>
+          </header>
+        </div>
+      </section>
+      <footer class="py-20 bg-white">
+        <div
+          class="container mx-auto px-3 flex flex-wrap flex-col md:flex-row justify-between items-center gap-6"
+        >
+          <a
+            href="#"
+            class="grow basis-0 text-lg font-bold text-center md:order-2 hover:underline"
+          >
+            <span class="text-green">Grzegorz</span>
+            <span class="text-gray">Pokorski</span>
+          </a>
+          <nav class="md:order-1 grow basis-0">
+            <ul class="flex flex-col md:flex-row items-center gap-3">
+              <li>
+                <a href="#" class="hover:underline">O mnie</a>
+              </li>
+              <li>
+                <a href="#" class="hover:underline">Oferta</a>
+              </li>
+              <li>
+                <a href="#" class="hover:underline">Blog</a>
+              </li>
+              <li>
+                <a href="#" class="hover:underline">Kontakt</a>
+              </li>
+            </ul>
+          </nav>
+          <p class="basis-full text-center text-gray-500 md:order-4">
+            Grzegorz Pokorski © 2022. Doodles by doodleipsum.com. Created by
+            Grzegorz Pokorski.
+          </p>
+          <ul
+            class="flex flex-row grow basis-0 gap-3 text-green md:justify-end md:order-3"
+          >
+            <li>
+              <a
+                href="https://behance.net/grzegorzpokorski"
+                target="_blank"
+                rel="nofolow noreferer"
+                class="hover:text-greenHover"
+              >
+                <span class="sr-only"> behance </span>
+                <span class="fa fab fa-behance" aria-hidden="true"></span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://instagram.com/grzegorz_pokorski"
+                target="_blank"
+                rel="nofolow noreferer"
+                class="hover:text-greenHover"
+              >
+                <span class="sr-only"> instagram </span>
+                <span class="fa fab fa-instagram" aria-hidden="true"></span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/grzegorz-pokorski/"
+                target="_blank"
+                rel="nofolow noreferer"
+                class="hover:text-greenHover"
+              >
+                <span class="sr-only"> linkedin </span>
+                <span class="fa fab fa-linkedin-in" aria-hidden="true"></span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </main>
+    <script type="text/javascript" src="./dist/js/bundle.js"></script>
+  </body>
+</html>

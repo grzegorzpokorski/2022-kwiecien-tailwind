@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth bg-whiteGreen">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./dist/css/style.min.css" />
+    <title>2022-kwiecien-tailwind</title>
+  </head>
+  <body>
+    <a
+      href="#tresc"
+      class="fixed py-4 px-8 m-4 bg-gray-500 text-white skip-link"
+      >Przejdź do treści</a
+    >
+    <header
+      id="navbar"
+      class="bg-none py-9 lg:py-12 fixed w-full z-10 transition-all duration-300"
+    >
+      <div class="container mx-auto px-3">
+        <div
+          class="flex flex-col lg:flex-row gap-3 items-center lg:justify-between"
+        >
+          <div
+            class="flex flex-row justify-between items-center w-full lg:w-auto"
+          >
+            <a href="#">
+              <h1 class="text-lg font-bold">
+                <span class="text-green">Grzegorz</span>
+                <span class="text-gray">Pokorski</span>
+              </h1>
+            </a>
+            <button
+              id="menu-opener"
+              class="flex flex-col justify-around lg:hidden mr-2 hamburger"
+              aria-label="otwórz nawigacje"
+            >
+              <span class="sr-only">Otwórz menu</span>
+              <span class="hamburger-top"></span>
+              <span class="hamburger-middle"></span>
+              <span class="hamburger-bottom"></span>
+            </button>
+          </div>
+          <nav id="menu" class="w-full lg:w-auto pt-8 lg:pt-0 lg:inline hidden">
+            <ul class="flex flex-col lg:flex-row gap-6 lg:items-center">
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-500 hover:text-gray-800 transition-all"
+                  >O mnie</a
+                >
+              </li>
+              <li class="relative dropdown-wrapper">
+                <a
+                  href="#"
+                  class="text-gray-500 hover:text-gray-800 transition-all dropdown-toggle"
+                  >Oferta</a
+                >
+                <ul
+                  class="lg:absolute bg-white lg:drop-shadow-md mt-4 flex flex-col lg:w-72 pb-4 dropdown-menu transition-all duration-300"
+                >
+                  <li class="pt-4">
+                    <a
+                      href="#"
+                      class="block text-gray-500 lg:text-gray-800 hover:text-green border-l-2 border-transparent hover:border-green px-4 transition-all duration-300"
+                      >Tworzenie stron internetownych</a
+                    >
+                  </li>
+                  <li class="pt-4">
+                    <a
+                      href="#"
+                      class="block text-gray-500 lg:text-gray-800 hover:text-green border-l-2 border-transparent hover:border-green px-4 transition-all duration-300"
+                      >Kodowanie szablonów graficznych</a
+                    >
+                  </li>
+                  <li class="pt-4">
+                    <a
+                      href="#"
+                      class="block text-gray-500 lg:text-gray-800 hover:text-green border-l-2 border-transparent hover:border-green px-4 transition-all duration-300"
+                      >Projektowanie graficzne</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-500 hover:text-gray-800 transition-all"
+                  >Realizacje</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-500 hover:text-gray-800 transition-all"
+                  >Blog</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="inline-block bg-green hover:bg-greenHover text-white px-6 py-3 transition-all"
+                  >Kontakt</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main id="tresc" class="pt-36">
+      <section class="bg-none py-12 md:py-24">
+        <div class="container mx-auto px-3 flex flex-col gap-3">
+          <header class="w-full md:w-8/12 text-left flex flex-col gap-4">
+            <h1 class="font-bold text-3xl md:text-3xl text-customGray">
+              Artykuły, ciekawostki z świata stron internetowych i nie tylko
+            </h1>
+          </header>
+          <ul
+            class="flex flex-col lg:grid md:grid-cols-2 xl:grid-cols-3 gap-6 mt-12 md:mt-24"
+          >
+            <li class="bg-white drop-shadow-xl border-2 border-greenLight">
+              <article>
+                <a href="#">
+                  <picture
+                    class="w-full h-72 max-h-72 overflow-hidden relative block"
+                  >
+                    <source
+                      media="(min-width: 576px)"
+                      srcset="./dist/img/people-768w.webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="./dist/img/people-992w.webp"
+                    />
+                    <source
+                      media="(min-width: 992px)"
+                      srcset="./dist/img/people-1200w.webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="./dist/img/people-1920w.webp"
+                    />
+                    <img
+                      width="558"
+                      height="500"
+                      src="./dist/img/people-576w.webp"
+                      alt="człowiek pracuje przy biurku"
+                      loading="lazy"
+                      class="object-cover object-center w-full h-full hover:scale-105 transition-all duration-300"
+                    />
+                  </picture>
+                </a>
+                <header class="p-8 flex flex-col gap-3">
+                  <div class="flex flex-row gap-3">
+                    <a href="#" class="text-green hover:underline">
+                      Programowanie
+                    </a>
+                  </div>
+                  <a href="#" class="hover:underline">
+                    <h3 class="font-bold text-lg">
+                      Semantyczny kod HTML, co to właściwie oznacza i dlaczego
+                      jest ważny?
+                    </h3>
+                  </a>
+                  <p>
+                    Co oznacza semantyczny kod HTML? Dlaczego tak wiele się o
+                    nim mówi i dlaczego jest bardzo ważny? Przeczytaj ten krótki
+                    artykuł aby odkryć odpowiedzi na te i inne pytania.
+                  </p>
+                </header>
+              </article>
+            </li>
+            <li class="bg-white drop-shadow-xl border-2 border-greenLight">
+              <article>
+                <a href="#">
+                  <picture
+                    class="w-full h-72 max-h-72 overflow-hidden relative block"
+                  >
+                    <source
+                      media="(min-width: 576px)"
+                      srcset="./dist/img/colors-768w.webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="./dist/img/colors-992w.webp"
+                    />
+                    <source
+                      media="(min-width: 992px)"
+                      srcset="./dist/img/colors-1200w.webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="./dist/img/colors-1920w.webp"
+                    />
+                    <img
+                      width="558"
+                      height="500"
+                      src="./dist/img/colors-576w.webp"
+                      alt="człowiek pracuje przy biurku"
+                      loading="lazy"
+                      class="object-cover object-center w-full h-full hover:scale-105 transition-all duration-300"
+                    />
+                  </picture>
+                </a>
+                <header class="p-8 flex flex-col gap-3">
+                  <div class="flex flex-row gap-3">
+                    <a href="#" class="text-green hover:underline">
+                      Programowanie
+                    </a>
+                  </div>
+                  <a href="#" class="hover:underline">
+                    <h3 class="font-bold text-lg">
+                      Semantyczny kod HTML, co to właściwie oznacza i dlaczego
+                      jest ważny?
+                    </h3>
+                  </a>
+                  <p>
+                    Co oznacza semantyczny kod HTML? Dlaczego tak wiele się o
+                    nim mówi i dlaczego jest bardzo ważny? Przeczytaj ten krótki
+                    artykuł aby odkryć odpowiedzi na te i inne pytania.
+                  </p>
+                </header>
+              </article>
+            </li>
+            <li class="bg-white drop-shadow-xl border-2 border-greenLight">
+              <article>
+                <a href="#">
+                  <picture
+                    class="w-full h-72 max-h-72 overflow-hidden relative block"
+                  >
+                    <source
+                      media="(min-width: 576px)"
+                      srcset="./dist/img/desk-768w.webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="./dist/img/desk-992w.webp"
+                    />
+                    <source
+                      media="(min-width: 992px)"
+                      srcset="./dist/img/desk-1200w.webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="./dist/img/desk-1920w.webp"
+                    />
+                    <img
+                      width="558"
+                      height="500"
+                      src="./dist/img/desk-576w.webp"
+                      alt="człowiek pracuje przy biurku"
+                      loading="lazy"
+                      class="object-cover object-center w-full h-full hover:scale-105 transition-all duration-300"
+                    />
+                  </picture>
+                </a>
+                <header class="p-8 flex flex-col gap-3">
+                  <div class="flex flex-row gap-3">
+                    <a href="#" class="text-green hover:underline">
+                      Programowanie
+                    </a>
+                  </div>
+                  <a href="#" class="hover:underline">
+                    <h3 class="font-bold text-lg">
+                      Semantyczny kod HTML, co to właściwie oznacza i dlaczego
+                      jest ważny?
+                    </h3>
+                  </a>
+                  <p>
+                    Co oznacza semantyczny kod HTML? Dlaczego tak wiele się o
+                    nim mówi i dlaczego jest bardzo ważny? Przeczytaj ten krótki
+                    artykuł aby odkryć odpowiedzi na te i inne pytania.
+                  </p>
+                </header>
+              </article>
+            </li>
+            <li class="bg-white drop-shadow-xl border-2 border-greenLight">
+              <article>
+                <a href="#">
+                  <picture
+                    class="w-full h-72 max-h-72 overflow-hidden relative block"
+                  >
+                    <source
+                      media="(min-width: 576px)"
+                      srcset="./dist/img/desk-768w.webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="./dist/img/desk-992w.webp"
+                    />
+                    <source
+                      media="(min-width: 992px)"
+                      srcset="./dist/img/desk-1200w.webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="./dist/img/desk-1920w.webp"
+                    />
+                    <img
+                      width="558"
+                      height="500"
+                      src="./dist/img/desk-576w.webp"
+                      alt="człowiek pracuje przy biurku"
+                      loading="lazy"
+                      class="object-cover object-center w-full h-full hover:scale-105 transition-all duration-300"
+                    />
+                  </picture>
+                </a>
+                <header class="p-8 flex flex-col gap-3">
+                  <div class="flex flex-row gap-3">
+                    <a href="#" class="text-green hover:underline">
+                      Programowanie
+                    </a>
+                  </div>
+                  <a href="#" class="hover:underline">
+                    <h3 class="font-bold text-lg">
+                      Semantyczny kod HTML, co to właściwie oznacza i dlaczego
+                      jest ważny?
+                    </h3>
+                  </a>
+                  <p>
+                    Co oznacza semantyczny kod HTML? Dlaczego tak wiele się o
+                    nim mówi i dlaczego jest bardzo ważny? Przeczytaj ten krótki
+                    artykuł aby odkryć odpowiedzi na te i inne pytania.
+                  </p>
+                </header>
+              </article>
+            </li>
+          </ul>
+          <footer class="text-center pt-12">
+            <nav class="flex flex-row gap-05 justify-center gap-3">
+              <a
+                href="#"
+                class="inline-block bg-green hover:bg-greenHover text-white px-6 py-3 transition-all"
+              >
+                Nowsze
+              </a>
+              <a
+                href="#"
+                class="inline-block bg-green hover:bg-greenHover text-white px-6 py-3 transition-all"
+              >
+                Starsze
+              </a>
+            </nav>
+          </footer>
+        </div>
+      </section>
+      <footer class="py-20 bg-white">
+        <div
+          class="container mx-auto px-3 flex flex-wrap flex-col md:flex-row justify-between items-center gap-6"
+        >
+          <a
+            href="#"
+            class="grow basis-0 text-lg font-bold text-center md:order-2 hover:underline"
+          >
+            <span class="text-green">Grzegorz</span>
+            <span class="text-gray">Pokorski</span>
+          </a>
+          <nav class="md:order-1 grow basis-0">
+            <ul class="flex flex-col md:flex-row items-center gap-3">
+              <li>
+                <a href="#" class="hover:underline">O mnie</a>
+              </li>
+              <li>
+                <a href="#" class="hover:underline">Oferta</a>
+              </li>
+              <li>
+                <a href="#" class="hover:underline">Blog</a>
+              </li>
+              <li>
+                <a href="#" class="hover:underline">Kontakt</a>
+              </li>
+            </ul>
+          </nav>
+          <p class="basis-full text-center text-gray-500 md:order-4">
+            Grzegorz Pokorski © 2022. Doodles by doodleipsum.com. Created by
+            Grzegorz Pokorski.
+          </p>
+          <ul
+            class="flex flex-row grow basis-0 gap-3 text-green md:justify-end md:order-3"
+          >
+            <li>
+              <a
+                href="https://behance.net/grzegorzpokorski"
+                target="_blank"
+                rel="nofolow noreferer"
+                class="hover:text-greenHover"
+              >
+                <span class="sr-only"> behance </span>
+                <span class="fa fab fa-behance" aria-hidden="true"></span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://instagram.com/grzegorz_pokorski"
+                target="_blank"
+                rel="nofolow noreferer"
+                class="hover:text-greenHover"
+              >
+                <span class="sr-only"> instagram </span>
+                <span class="fa fab fa-instagram" aria-hidden="true"></span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/grzegorz-pokorski/"
+                target="_blank"
+                rel="nofolow noreferer"
+                class="hover:text-greenHover"
+              >
+                <span class="sr-only"> linkedin </span>
+                <span class="fa fab fa-linkedin-in" aria-hidden="true"></span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </main>
+    <script type="text/javascript" src="./dist/js/bundle.js"></script>
+  </body>
+</html>
